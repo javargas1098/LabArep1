@@ -4,7 +4,7 @@ public class Head {
 	/**
 	 * @author Javier Vargas
 	 * 
-	 * Cabeza y cola de la lista de nodos
+	 * Cabeza y cola del nodo
 	 *
 	 */
 	 Node head;

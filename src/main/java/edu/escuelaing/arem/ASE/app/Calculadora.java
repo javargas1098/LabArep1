@@ -24,7 +24,6 @@ public class Calculadora {
 		FileReader fr = new FileReader("datahours.txt");
 		BufferedReader br = new BufferedReader(fr);
 		int size = 0;
-		int tamano = 0;
 		String valor;
 		linkedList datos = new linkedList();
 		while ((valor = br.readLine()) != null) {
@@ -42,7 +41,8 @@ public class Calculadora {
 	 * @param LinkedList<float> Son los datos con los que podra calculará la
 	 *                          desviación estandar
 	 * 
-	 * @return float Desviación estandar
+	 * @return float 
+	 * Desviación estandar
 	 * 
 	 */
 
@@ -59,7 +59,8 @@ public class Calculadora {
 	 * 
 	 * @param LinkedList<Float> Son los datos con los que se podra calcular la media
 	 * 
-	 * @return float Media
+	 * @return float 
+	 * Media
 	 * 
 	 */
 

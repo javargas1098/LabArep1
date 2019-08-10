@@ -20,7 +20,8 @@ public class linkedList {
 	/**
 	 * Este metodo inserta los valores a la linkedList
 	 * 
-	 * @param FLoat data Son los datos resividos por parametro
+	 * @param data FLoat  
+	 * Son los datos resividos por parametro
 	 * 
 	 * @return float Linkedlist
 	 * 
@@ -28,7 +29,7 @@ public class linkedList {
 	public void insert(Double data) {
 		Node new_node = new Node(data);
 		new_node.next = null;
-		if (data == null)
+		if (head.getHead() == null)
 			head.setHead(new_node);
 		else {
 			Node last = head.getHead();
@@ -44,7 +45,8 @@ public class linkedList {
 	/**
 	 * Este metodo suma los datos de la linkedList
 	 * 
-	 * @param Linkedlist data Datos insertados en la linkedlist
+	 * @param Linkedlist data 
+	 * Datos insertados en la linkedlist
 	 * 
 	 * @return int sum
 	 * 
@@ -64,7 +66,9 @@ public class linkedList {
 	 * Este metodo suma los datos de la linkedList con un amedia debidamente
 	 * calculada y luego dichos datos se elevan al cuadrado
 	 * 
-	 * @param Linkedlist data , float media Datos insertados en la linkedlist y la
+	 * @param Linkedlist data , float media 
+	 * 
+	 * Datos insertados en la linkedlist y la
 	 *                   media de dichos datos
 	 * 
 	 * @return int sum
