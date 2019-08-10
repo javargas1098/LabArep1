@@ -3,7 +3,6 @@ package edu.escuelaing.arem.ASE.app;
 public class linkedList {
 
 	private Head head;
-
 	public linkedList() {
 		head = new Head(null, null);
 	}
@@ -16,6 +15,7 @@ public class linkedList {
 		else {
 			Node last = head.getHead();
 			while (last.nextNode() != null) {
+				
 				last = last.nextNode();
 			}
 			last.setNext(new_node);
@@ -26,17 +26,38 @@ public class linkedList {
 
 	public String toString() {
 		StringBuilder sb = new StringBuilder();
-		Node currNode  = head.getNext();
+		Node currNode  = head.getHead();
 		while (currNode  != null) {
+			
 			sb.append(currNode.geData()).append(" ");
 			currNode  = currNode.nextNode();
 		}
 		return sb.toString().trim();
 
 	}
-
-	public int size() {
-		// TODO Auto-generated method stub
-		return 0;
+	public double sum (linkedList data) {
+		double sum = 0;
+		Node currNode  = data.head.getHead();
+		while (currNode  != null) {
+			sum+=currNode.geData();
+			currNode  = currNode.nextNode();
+		}
+		return sum;
+			
+		
 	}
+	public double sum (linkedList data, double media) {
+		double sum = 0;
+		Node currNode  = data.head.getHead();
+		while (currNode  != null) {
+			//System.out.println(currNode.geData());
+			sum+=Math.pow(currNode.geData()-media,2);
+			currNode  = currNode.nextNode();
+		}
+		return sum;
+			
+		
+	}
+
+
 }
