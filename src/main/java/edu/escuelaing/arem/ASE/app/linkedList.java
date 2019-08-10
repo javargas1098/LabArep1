@@ -1,63 +1,85 @@
 package edu.escuelaing.arem.ASE.app;
 
 public class linkedList {
+	/**
+	 * @author Javier Vargas
+	 * 
+	 * Implementacion de linkedlist
+	 *
+	 */
 
 	private Head head;
+
+	/**
+	 * Constructor
+	 */
 	public linkedList() {
 		head = new Head(null, null);
 	}
 
+	/**
+	 * Este metodo inserta los valores a la linkedList
+	 * 
+	 * @param FLoat data Son los datos resividos por parametro
+	 * 
+	 * @return float Linkedlist
+	 * 
+	 */
 	public void insert(Double data) {
 		Node new_node = new Node(data);
 		new_node.next = null;
-		if (head.getHead() == null)
+		if (data == null)
 			head.setHead(new_node);
 		else {
 			Node last = head.getHead();
-			while (last.nextNode() != null) {
-				
-				last = last.nextNode();
+			while (last.getNext() != null) {
+
+				last = last.getNext();
 			}
 			last.setNext(new_node);
 		}
 		head.setNext(new_node);
 
 	}
-
-	public String toString() {
-		StringBuilder sb = new StringBuilder();
-		Node currNode  = head.getHead();
-		while (currNode  != null) {
-			
-			sb.append(currNode.geData()).append(" ");
-			currNode  = currNode.nextNode();
-		}
-		return sb.toString().trim();
-
-	}
-	public double sum (linkedList data) {
+	/**
+	 * Este metodo suma los datos de la linkedList
+	 * 
+	 * @param Linkedlist data Datos insertados en la linkedlist
+	 * 
+	 * @return int sum
+	 * 
+	 */
+	public double sum(linkedList data) {
 		double sum = 0;
-		Node currNode  = data.head.getHead();
-		while (currNode  != null) {
-			sum+=currNode.geData();
-			currNode  = currNode.nextNode();
+		Node currNode = data.head.getHead();
+		while (currNode != null) {
+			sum += currNode.getData();
+			currNode = currNode.getNext();
 		}
 		return sum;
-			
-		
-	}
-	public double sum (linkedList data, double media) {
-		double sum = 0;
-		Node currNode  = data.head.getHead();
-		while (currNode  != null) {
-			//System.out.println(currNode.geData());
-			sum+=Math.pow(currNode.geData()-media,2);
-			currNode  = currNode.nextNode();
-		}
-		return sum;
-			
-		
+
 	}
 
+	/**
+	 * Este metodo suma los datos de la linkedList con un amedia debidamente
+	 * calculada y luego dichos datos se elevan al cuadrado
+	 * 
+	 * @param Linkedlist data , float media Datos insertados en la linkedlist y la
+	 *                   media de dichos datos
+	 * 
+	 * @return int sum
+	 * 
+	 */
+	public double sum(linkedList data, double media) {
+		double sum = 0;
+		Node currNode = data.head.getHead();
+		while (currNode != null) {
+			// System.out.println(currNode.geData());
+			sum += Math.pow(currNode.getData() - media, 2);
+			currNode = currNode.getNext();
+		}
+		return sum;
+
+	}
 
 }

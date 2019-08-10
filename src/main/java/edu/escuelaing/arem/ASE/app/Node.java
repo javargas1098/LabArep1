@@ -1,26 +1,40 @@
 package edu.escuelaing.arem.ASE.app;
 
 public class Node {
+	/**
+	 * @author Javier Vargas
+	 * 
+	 * Nodo de la linkedlist
+	 *
+	 */	
 
 	double data;
 	Node next;
 
-	// Constructor
+	/**
+     * Constructor
+     */
 	public Node(Double d) {
 		data = d;
 		next = null;
 	}
 
-	public void setNext(Node node) {
-		this.next = node;
+	public double getData() {
+		return data;
 	}
 
-	public Node nextNode() {
+	public void setData(double data) {
+		this.data = data;
+	}
+
+	public Node getNext() {
 		return next;
 	}
 
-	public double geData() {
-		return data;
+	public void setNext(Node next) {
+		this.next = next;
 	}
+
+
 
 }

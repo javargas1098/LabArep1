@@ -14,7 +14,7 @@ import org.omg.CORBA.DATA_CONVERSION;
 /**
  * @author Javier Vargas
  * 
- *Calculadora de medias y desviaciones estandar
+ *         Calculadora de medias y desviaciones estandar
  *
  */
 
@@ -35,17 +35,16 @@ public class Calculadora {
 		System.out.println(desviacion(datos, size));
 		br.close();
 	}
-    /**
-     * Este metodo Calcula la desviacion estandar a un conjunto de datos
-     * 
-     * @param LinkedList<float>
-     * Son los datos con los que podra
-     * calculará la desviación estandar
-     * 
-     * @return float
-     * Desviación estandar
-     * 
-     */
+
+	/**
+	 * Este metodo Calcula la desviacion estandar a un conjunto de datos
+	 * 
+	 * @param LinkedList<float> Son los datos con los que podra calculará la
+	 *                          desviación estandar
+	 * 
+	 * @return float Desviación estandar
+	 * 
+	 */
 
 	private static Double desviacion(linkedList datos, int size) {
 		// TODO Auto-generated method stub
@@ -55,17 +54,14 @@ public class Calculadora {
 		return Math.sqrt(resultado / (size - 1));
 	}
 
-	  /**
-     * Este metodo Calcula la media a un conjunto de datos
-     * 
-     * @param LinkedList<Float>
-     * Son los datos con los que se podra 
-     * calcular la media
-     * 
-     * @return float
-     * Media
-     * 
-     */
+	/**
+	 * Este metodo Calcula la media a un conjunto de datos
+	 * 
+	 * @param LinkedList<Float> Son los datos con los que se podra calcular la media
+	 * 
+	 * @return float Media
+	 * 
+	 */
 
 	private static double media(linkedList datos, int size) {
 		// TODO Auto-generated method stub

@@ -1,9 +1,17 @@
 package edu.escuelaing.arem.ASE.app;
 
 public class Head {
+	/**
+	 * @author Javier Vargas
+	 * 
+	 * Cabeza y cola de la lista de nodos
+	 *
+	 */
 	 Node head;
 	 Node next;
-
+	 /**
+	 * Constructor
+	 */
 	public Head(Node first, Node last) {
 		head = first;
 		next = last;
