@@ -32,5 +32,5 @@ Para modificar el objeto de análisis, se debe modificar el archivo datos.txt qu
 
 ## License
 
-Este proyecto está licenciado bajo GNU  License v3.0 - ver [LICENSE.txt](LICENSE) para más detalles.
+Este proyecto está licenciado bajo GNU  GENERAL PUBLIC LICENSE v3.0 - ver [LICENSE.txt](LICENSE) para más detalles.
 
