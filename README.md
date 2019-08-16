@@ -24,7 +24,7 @@ La documentación se encuentra en la carpeta doc.
 
 ## Probando
 
-Para modificar el objeto de análisis, se debe modificar el archivo data.txt que se encuentra en la raíz del proyecto. Cambiando, agregando o eliminando datos para su análisis, siempre siguiendo con la notación presentada en el ejemplo.
+Existen 2 archivos datasize.txt, datahours.txt,Para modificar el objeto de análisis, se debe cambiar el archivo datasize.txt o en su defecto datahours.txt que se encuentran en la raíz del proyecto. Cambiando, agregando o eliminando datos para su análisis, siempre siguiendo con la notación presentada en el ejemplo.
 
 ## Autor
 
